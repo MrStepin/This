@@ -21,7 +21,10 @@ namespace This
             Initialize();
         }
 
-        public Page(double width) : this (){ }
+        public Page(double width) : this()
+        {
+            Width = width;
+        }
 
         public Page(double width, double height) : this()
         {

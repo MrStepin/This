@@ -8,7 +8,7 @@ namespace This
 {
     class Screen
     {
-        public static double MaxWidht;
+        public static double MaxWidth;
         public static double MaxHeight;
     }
 }

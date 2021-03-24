@@ -23,12 +23,11 @@ namespace This
 
         public Page(double width) : this()
         {
-            Width = width;
+            Width = width > Screen.MaxWidth ? 0 : width;
         }
 
-        public Page(double width, double height) : this()
+        public Page(double width, double height) : this(width)
         {
-            Width = width > Screen.MaxWidth ? 0 : width;
             Height = height > Screen.MaxHeight ? 0 : height;
         }
     }
